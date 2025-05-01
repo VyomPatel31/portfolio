@@ -104,7 +104,7 @@
 
 .contactFrom h1{
     font-family: "Montserrat", sans-serif;
-    text-align: center;
+   padding: 12px 0;
 }
 
 .contactForm form div{
@@ -122,8 +122,8 @@
 
 #emailHelp{
    color: midnightblue;
-   font-size: 8px;
-   margin: 0 5px;
+   font-size: 11px;
+   padding: 3px 0 0 0;
 }
 
 #form-check{
