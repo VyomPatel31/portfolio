@@ -197,11 +197,12 @@ class PortfolioApp {
 
 ## 📞 **Contact Information**
 
-- **Email**: vyom.patel@example.com
-- **Phone**: +91 12345 67890
-- **Location**: Chandkheda, Gujarat, India
-- **LinkedIn**: [linkedin.com/in/vyompatel](https://linkedin.com/in/vyompatel)
-- **GitHub**: [github.com/vyompatel](https://github.com/vyompatel)
+- **Email**: pvyom010@gmail.com
+- **Phone**: +91 9313517218
+- **Location**: Gandhinagar, Gujarat, India
+- **LinkedIn**: [linkedin.com/in/patel-vyom-8046712b6](https://www.linkedin.com/in/patel-vyom-8046712b6)
+- **GitHub**: [github.com/VyomPatel31](https://github.com/VyomPatel31)
+- **Instagram**: [instagram.com/patelll_vyom](https://www.instagram.com/patelll_vyom)
 
 ## 📄 **License**
 
