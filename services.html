@@ -3,39 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vyom-portfolio</title>
+    <title>Services - Vyom Patel Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="author" content="Vyom Patel">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/intro.html">My intro</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main">
-            <div class="infoContainer">
-                <div class="devinfo">
-                    <div class="hello">Hi i am</div>
-                    <div class="name">vyom patel</div>
-                    <div class="about">Web Developer,Cricketer</div>
-                    <div class="aboutmore">I am an Engineer and I am Studied in the vishwkarma govenment college chandkheda</div>
-                    <div class="buttons">
-                        <button>Download cv</button>
-                        <button>Contact me</button>
-                    </div>
-                    
-                </div>
-                <div class="devpic"><img src="dev.png" alt="vyom patel"></div>
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Vyom Patel</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="intro.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="main-content" role="main">
+        <!-- Services Section -->
+        <section class="services-page-section">
+            <div class="container">
+                <div class="services-page-header">
+                    <h1 class="page-title">My Services</h1>
+                    <p class="page-subtitle">Comprehensive web development and engineering solutions tailored to your needs</p>
+                </div>
+
+                <div class="services-detailed-grid">
+                    <div class="service-detailed-card">
+                        <div class="service-icon-large">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h2>Web Development</h2>
+                        <p class="service-description">
+                            Creating modern, responsive websites and web applications using the latest technologies
+                            and best practices. From simple landing pages to complex web applications.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check"></i> Cross-browser Compatibility</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React</span>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon-large">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h2>Mobile-First Design</h2>
+                        <p class="service-description">
+                            Designing websites that work perfectly on all devices, from mobile phones to desktop computers.
+                            Ensuring optimal user experience across all screen sizes.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Mobile Optimization</li>
+                            <li><i class="fas fa-check"></i> Touch-friendly Interface</li>
+                            <li><i class="fas fa-check"></i> Fast Loading Times</li>
+                            <li><i class="fas fa-check"></i> Progressive Web Apps</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-badge">Responsive CSS</span>
+                            <span class="tech-badge">PWA</span>
+                            <span class="tech-badge">Mobile UX</span>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon-large">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h2>Performance Optimization</h2>
+                        <p class="service-description">
+                            Optimizing websites for speed and performance to provide the best user experience.
+                            Implementing best practices for fast loading and smooth interactions.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Speed Optimization</li>
+                            <li><i class="fas fa-check"></i> SEO Enhancement</li>
+                            <li><i class="fas fa-check"></i> Code Minification</li>
+                            <li><i class="fas fa-check"></i> Image Optimization</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-badge">Webpack</span>
+                            <span class="tech-badge">Lighthouse</span>
+                            <span class="tech-badge">CDN</span>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon-large">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h2>Maintenance & Support</h2>
+                        <p class="service-description">
+                            Providing ongoing maintenance and support to keep your website running smoothly.
+                            Regular updates, security patches, and feature enhancements.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Regular Updates</li>
+                            <li><i class="fas fa-check"></i> Security Monitoring</li>
+                            <li><i class="fas fa-check"></i> Bug Fixes</li>
+                            <li><i class="fas fa-check"></i> Feature Additions</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">CI/CD</span>
+                            <span class="tech-badge">Monitoring</span>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon-large">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h2>Backend Development</h2>
+                        <p class="service-description">
+                            Building robust backend systems and APIs to power your web applications.
+                            Database design, server setup, and API development.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> API Development</li>
+                            <li><i class="fas fa-check"></i> Database Design</li>
+                            <li><i class="fas fa-check"></i> Server Configuration</li>
+                            <li><i class="fas fa-check"></i> Authentication Systems</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon-large">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h2>UI/UX Design</h2>
+                        <p class="service-description">
+                            Creating beautiful and intuitive user interfaces with focus on user experience.
+                            From wireframes to final designs that convert visitors into customers.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> User Research</li>
+                            <li><i class="fas fa-check"></i> Wireframing</li>
+                            <li><i class="fas fa-check"></i> Prototyping</li>
+                            <li><i class="fas fa-check"></i> Visual Design</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-badge">Figma</span>
+                            <span class="tech-badge">Adobe XD</span>
+                            <span class="tech-badge">Sketch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-cta">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's discuss how I can help bring your ideas to life with professional web development services.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get Quote
+                        </a>
+                        <a href="index.html#projects" class="btn btn-secondary">
+                            <i class="fas fa-eye"></i> View Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vyom Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/vyompatel" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vyompatel" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/vyompatel" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

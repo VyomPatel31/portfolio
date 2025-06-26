@@ -3,39 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vyom-portfolio</title>
+    <title>About - Vyom Patel Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="author" content="Vyom Patel">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/intro.html">My intro</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main">
-            <div class="infoContainer">
-                <div class="devinfo">
-                    <div class="hello">Hi i am</div>
-                    <div class="name">vyom patel</div>
-                    <div class="about">Web Developer,Cricketer</div>
-                    <div class="aboutmore">I am an Engineer and I am Studied in the vishwkarma govenment college chandkheda</div>
-                    <div class="buttons">
-                        <button>Download cv</button>
-                        <button>Contact me</button>
-                    </div>
-                    
-                </div>
-                <div class="devpic"><img src="dev.png" alt="vyom patel"></div>
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Vyom Patel</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="intro.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="index.html#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="main-content" role="main">
+        <!-- About Section -->
+        <section class="about-page-section">
+            <div class="container">
+                <div class="about-page-header">
+                    <h1 class="page-title">About Me</h1>
+                    <p class="page-subtitle">Get to know more about my journey, skills, and passion for web development</p>
+                </div>
+
+                <div class="about-page-content">
+                    <div class="about-story">
+                        <div class="story-section">
+                            <h2><i class="fas fa-user"></i> My Story</h2>
+                            <p>
+                                I'm a passionate web developer and engineer with a love for creating innovative digital solutions.
+                                My journey in technology started during my studies at Vishwakarma Government College Chandkheda,
+                                where I developed a strong foundation in engineering principles and programming.
+                            </p>
+                            <p>
+                                When I'm not coding, you can find me playing cricket or exploring new technologies.
+                                I believe in continuous learning and staying updated with the latest trends in web development.
+                            </p>
+                        </div>
+
+                        <div class="story-section">
+                            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                            <div class="education-item">
+                                <h3>Engineering Degree</h3>
+                                <p class="institution">Vishwakarma Government College Chandkheda</p>
+                                <p class="description">
+                                    Completed my engineering studies with a focus on technology and innovation.
+                                    Gained strong analytical and problem-solving skills.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="story-section">
+                            <h2><i class="fas fa-heart"></i> Interests</h2>
+                            <div class="interests-grid">
+                                <div class="interest-item">
+                                    <i class="fas fa-code"></i>
+                                    <h3>Web Development</h3>
+                                    <p>Creating modern, responsive websites and applications</p>
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-baseball-ball"></i>
+                                    <h3>Cricket</h3>
+                                    <p>Playing cricket and following the sport passionately</p>
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h3>Technology</h3>
+                                    <p>Exploring new technologies and programming languages</p>
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h3>Innovation</h3>
+                                    <p>Finding creative solutions to complex problems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-showcase">
+                        <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+                        <div class="skills-container">
+                            <div class="skill-item" data-skill="95">
+                                <div class="skill-info">
+                                    <span class="skill-name">
+                                        <i class="fab fa-html5"></i> HTML
+                                    </span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="90">
+                                <div class="skill-info">
+                                    <span class="skill-name">
+                                        <i class="fab fa-css3-alt"></i> CSS
+                                    </span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">
+                                        <i class="fab fa-js-square"></i> JavaScript
+                                    </span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="80">
+                                <div class="skill-info">
+                                    <span class="skill-name">
+                                        <i class="fab fa-python"></i> Python
+                                    </span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="75">
+                                <div class="skill-info">
+                                    <span class="skill-name">
+                                        <i class="fab fa-react"></i> React
+                                    </span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="70">
+                                <div class="skill-info">
+                                    <span class="skill-name">
+                                        <i class="fab fa-node-js"></i> Node.js
+                                    </span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cta-section">
+                            <h3>Ready to work together?</h3>
+                            <p>Let's create something amazing!</p>
+                            <a href="contact.html" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vyom Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/vyompatel" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vyompatel" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/vyompatel" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

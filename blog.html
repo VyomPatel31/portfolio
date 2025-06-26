@@ -3,39 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vyom-portfolio</title>
+    <title>Blog - Vyom Patel Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="author" content="Vyom Patel">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/intro.html">My intro</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main">
-            <div class="infoContainer">
-                <div class="devinfo">
-                    <div class="hello">Hi i am</div>
-                    <div class="name">vyom patel</div>
-                    <div class="about">Web Developer,Cricketer</div>
-                    <div class="aboutmore">I am an Engineer and I am Studied in the vishwkarma govenment college chandkheda</div>
-                    <div class="buttons">
-                        <button>Download cv</button>
-                        <button>Contact me</button>
-                    </div>
-                    
-                </div>
-                <div class="devpic"><img src="dev.png" alt="vyom patel"></div>
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Vyom Patel</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="intro.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="main-content" role="main">
+        <!-- Blog Section -->
+        <section class="blog-page-section">
+            <div class="container">
+                <div class="blog-page-header">
+                    <h1 class="page-title">Tech Blog</h1>
+                    <p class="page-subtitle">Insights, tutorials, and thoughts on web development and technology</p>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card featured">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="JavaScript Tutorial">
+                            <div class="blog-category">Featured</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar"></i> December 15, 2024
+                                </span>
+                                <span class="blog-read-time">
+                                    <i class="fas fa-clock"></i> 5 min read
+                                </span>
+                            </div>
+                            <h2>Master JavaScript ES6+ Features in 2024</h2>
+                            <p>
+                                Discover the most important ES6+ features that every modern JavaScript developer should know.
+                                From arrow functions to async/await, learn how to write cleaner and more efficient code.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">ES6</span>
+                                <span class="tag">Tutorial</span>
+                            </div>
+                            <a href="#" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="React Development">
+                            <div class="blog-category">React</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar"></i> December 10, 2024
+                                </span>
+                                <span class="blog-read-time">
+                                    <i class="fas fa-clock"></i> 8 min read
+                                </span>
+                            </div>
+                            <h2>Building Scalable React Applications</h2>
+                            <p>
+                                Learn best practices for building large-scale React applications.
+                                Explore component architecture, state management, and performance optimization techniques.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Architecture</span>
+                                <span class="tag">Performance</span>
+                            </div>
+                            <a href="#" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CSS Grid">
+                            <div class="blog-category">CSS</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar"></i> December 5, 2024
+                                </span>
+                                <span class="blog-read-time">
+                                    <i class="fas fa-clock"></i> 6 min read
+                                </span>
+                            </div>
+                            <h2>CSS Grid vs Flexbox: When to Use What</h2>
+                            <p>
+                                A comprehensive guide to understanding the differences between CSS Grid and Flexbox.
+                                Learn when to use each layout method for optimal results.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">CSS</span>
+                                <span class="tag">Grid</span>
+                                <span class="tag">Flexbox</span>
+                            </div>
+                            <a href="#" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Performance">
+                            <div class="blog-category">Performance</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar"></i> November 28, 2024
+                                </span>
+                                <span class="blog-read-time">
+                                    <i class="fas fa-clock"></i> 10 min read
+                                </span>
+                            </div>
+                            <h2>Web Performance Optimization Techniques</h2>
+                            <p>
+                                Boost your website's performance with these proven optimization techniques.
+                                From image optimization to code splitting, learn how to make your site lightning fast.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">Performance</span>
+                                <span class="tag">Optimization</span>
+                                <span class="tag">SEO</span>
+                            </div>
+                            <a href="#" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Node.js">
+                            <div class="blog-category">Backend</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar"></i> November 20, 2024
+                                </span>
+                                <span class="blog-read-time">
+                                    <i class="fas fa-clock"></i> 7 min read
+                                </span>
+                            </div>
+                            <h2>Getting Started with Node.js and Express</h2>
+                            <p>
+                                Build your first REST API with Node.js and Express.
+                                This beginner-friendly tutorial covers everything from setup to deployment.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">API</span>
+                            </div>
+                            <a href="#" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Git Version Control">
+                            <div class="blog-category">Tools</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar"></i> November 15, 2024
+                                </span>
+                                <span class="blog-read-time">
+                                    <i class="fas fa-clock"></i> 4 min read
+                                </span>
+                            </div>
+                            <h2>Git Best Practices for Team Development</h2>
+                            <p>
+                                Master Git workflows and collaboration techniques for effective team development.
+                                Learn about branching strategies, commit conventions, and code review processes.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">Workflow</span>
+                                <span class="tag">Collaboration</span>
+                            </div>
+                            <a href="#" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="blog-cta">
+                    <h2>Want to Stay Updated?</h2>
+                    <p>Subscribe to get notified about new articles and tutorials</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Subscribe
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vyom Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/vyompatel" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vyompatel" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/vyompatel" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

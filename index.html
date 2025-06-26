@@ -3,40 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vyom-portfolio</title>
+    <title>Vyom Patel - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Vyom Patel - Web Developer and Engineer Portfolio">
+    <meta name="author" content="Vyom Patel">
+    <meta property="og:title" content="Vyom Patel - Portfolio">
+    <meta property="og:description" content="Web Developer and Engineer Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="intro.html">My intro</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main">
-            <div class="infoContainer">
-                <div class="devinfo">
-                    <div class="hello">Hi i am</div>
-                    <div class="name">vyom patel</div>
-                    <div class="about">Web Developer,Cricketer</div>
-                    <div class="aboutmore">I am an Engineer and I am Studied in the vishwkarma govenment college chandkheda</div>
-                    <div class="buttons">
-                        <a href="./cv.txt">
-                        <button>Download cv</button></a>
-                        <a href="contact.html"><button>Contact me</button></a>
-                    </div>
-                    
-                </div>
-                <div class="devpic"><img src="dev.png" alt="vyom patel"></div>
-            </div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-text">Loading...</div>
         </div>
     </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Vyom Patel</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vyom Patel",
+        "jobTitle": "Web Developer",
+        "description": "Web Developer and Engineer specializing in modern web technologies",
+        "url": "https://vyompatel.dev",
+        "sameAs": [
+            "https://linkedin.com/in/vyompatel",
+            "https://github.com/vyompatel",
+            "https://instagram.com/vyompatel"
+        ],
+        "knowsAbout": ["HTML", "CSS", "JavaScript", "Python", "Web Development", "Engineering"],
+        "alumniOf": "Vishwakarma Government College Chandkheda"
+    }
+    </script>
+
+    <!-- Main Content -->
+    <main id="main" class="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-greeting">Hi, I am</h1>
+                        <h2 class="hero-name">Vyom Patel</h2>
+                        <div class="hero-title">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="hero-description">
+                            I am an Engineer and I studied at Vishwakarma Government College Chandkheda.
+                            Passionate about creating amazing web experiences.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="./cv.txt" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i> Contact Me
+                            </a>
+                        </div>
+                        <div class="social-links" role="list" aria-label="Social media links">
+                            <a href="https://linkedin.com/in/vyompatel" class="social-link" aria-label="Connect on LinkedIn" role="listitem">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/vyompatel" class="social-link" aria-label="View GitHub profile" role="listitem">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://instagram.com/vyompatel" class="social-link" aria-label="Follow on Instagram" role="listitem">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="vyom.jpeg" alt="Vyom Patel - Web Developer" class="profile-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate web developer and engineer with a love for creating
+                            innovative digital solutions. When I'm not coding, you can find me
+                            playing cricket or exploring new technologies.
+                        </p>
+                        <p>
+                            My journey in technology started during my studies at Vishwakarma
+                            Government College Chandkheda, where I developed a strong foundation
+                            in engineering principles and programming.
+                        </p>
+                        <div class="about-cta">
+                            <a href="intro.html" class="btn btn-primary">
+                                <i class="fas fa-user"></i> Learn More About Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item" data-skill="95">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="90">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="85">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="80">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hotel Management System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Hotel Management System</h3>
+                            <p>A comprehensive hotel management system built with modern web technologies. Features include room booking, customer management, billing, and administrative dashboard.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spotify Clone">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Spotify Clone</h3>
+                            <p>A fully functional music streaming application clone of Spotify. Features include music player, playlists, search functionality, and responsive design for all devices.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Spotify API</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Amazon Clone">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Amazon Clone</h3>
+                            <p>A complete e-commerce platform inspired by Amazon. Includes product catalog, shopping cart, user authentication, payment integration, and order management system.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Stripe API</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section -->
+        <section id="services" class="services-preview-section">
+            <div class="container">
+                <h2 class="section-title">My Services</h2>
+                <div class="services-preview-content">
+                    <p class="services-intro">
+                        I offer comprehensive web development and engineering solutions tailored to your needs.
+                        From modern responsive websites to complex web applications, I deliver quality results.
+                    </p>
+                    <div class="services-highlights">
+                        <div class="service-highlight">
+                            <i class="fas fa-code"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-rocket"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-tools"></i>
+                            <span>Maintenance & Support</span>
+                        </div>
+                    </div>
+                    <div class="services-cta">
+                        <a href="services.html" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> View All Services
+                        </a>
+                        <a href="intro.html" class="btn btn-secondary">
+                            <i class="fas fa-user"></i> About Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview Section -->
+        <section id="blog" class="blog-preview-section">
+            <div class="container">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="blog-preview-content">
+                    <p class="blog-intro">
+                        Stay updated with the latest web development insights, tutorials, and tech articles.
+                        I share my knowledge and experiences in modern web development.
+                    </p>
+                    <div class="blog-preview-grid">
+                        <div class="blog-preview-card">
+                            <div class="blog-preview-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3>JavaScript ES6+ Features</h3>
+                            <p>Master the most important ES6+ features for modern development</p>
+                            <span class="blog-date">Dec 15, 2024</span>
+                        </div>
+                        <div class="blog-preview-card">
+                            <div class="blog-preview-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>Building Scalable React Apps</h3>
+                            <p>Best practices for large-scale React application architecture</p>
+                            <span class="blog-date">Dec 10, 2024</span>
+                        </div>
+                        <div class="blog-preview-card">
+                            <div class="blog-preview-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS Grid vs Flexbox</h3>
+                            <p>When to use CSS Grid and when to use Flexbox for layouts</p>
+                            <span class="blog-date">Dec 5, 2024</span>
+                        </div>
+                    </div>
+                    <div class="blog-cta">
+                        <a href="blog.html" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Read All Articles
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Preview Section -->
+        <section id="contact" class="contact-preview-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-preview-content">
+                    <p class="contact-intro">
+                        Ready to start your next project? I'm always interested in new opportunities
+                        and exciting challenges. Let's discuss how we can work together.
+                    </p>
+                    <div class="contact-quick-info">
+                        <div class="quick-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vyom.patel@example.com</span>
+                        </div>
+                        <div class="quick-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 12345 67890</span>
+                        </div>
+                        <div class="quick-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chandkheda, Gujarat, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                        <a href="./cv.txt" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vyom Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/vyompatel" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vyompatel" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/vyompatel" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

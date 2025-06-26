@@ -3,53 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vyom-portfolio</title>
+    <title>Contact - Vyom Patel Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="author" content="Vyom Patel">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/intro.html">My intro</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main">
-            <div class="contactForm">
-                <h1>Contact me for Project/General Enquiries</h1>
-                <form>
-                    <div class="mb-3">
-                        <label for="clientemail" class="form-label">Name</label>
-                        <input type="name" class="form-control" id="clientemail" aria-describedby="emailHelp">
-                        </div>
-                    <div class="mb-3">
-                      <label for="clientemail" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="clientphone" class="form-label">Phone</label>
-                      <input type="password" class="form-control" id="clientphone">
-                    </div>
-                    <div class="mb-3">
-                        <label for="clientemail" class="form-label">Enquiry</label>
-                        <input type="enquiry" class="form-control" id="clientemail" aria-describedby="emailHelp">
-                        </div>
-                    <div class="mb-3" id="form-check">
-                      <input type="checkbox" class="form-check-input" id="isclient">
-                      <label class="form-check-label" for="isclient">I wat you to work on project with me</label>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Vyom Patel</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="index.html#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="main-content" role="main">
+        <!-- Contact Section -->
+        <section class="contact-page-section">
+            <div class="container">
+                <div class="contact-page-header">
+                    <h1 class="page-title">Get In Touch</h1>
+                    <p class="page-subtitle">Let's discuss your next project or just say hello!</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>pvyom010@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+91 9313517018</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Gandhinagar, Gujarat, India</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <h3>Follow Me</h3>
+                            <div class="social-links" role="list" aria-label="Social media links">
+                                <a href="https://linkedin.com/in/vyompatel" class="social-link" aria-label="Connect on LinkedIn" role="listitem">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/vyompatel" class="social-link" aria-label="View GitHub profile" role="listitem">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://instagram.com/vyompatel" class="social-link" aria-label="Follow on Instagram" role="listitem">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send Message</h2>
+
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or inquiry..."></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="project-inquiry" name="project-inquiry">
+                                <span class="checkmark"></span>
+                                I'm interested in working on a project together
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vyom Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/vyompatel" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vyompatel" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/vyompatel" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
